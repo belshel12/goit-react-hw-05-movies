@@ -18,7 +18,7 @@ const Home = () => {
         setMovies(result);
       })
       .catch(error => console.log(error));
-  }, []);
+  }, [movies]);
 
   return (
     <List>
