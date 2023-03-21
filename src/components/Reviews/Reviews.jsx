@@ -19,7 +19,7 @@ const Review = () => {
         setReviews(resp);
       })
       .catch(error => console.log(error));
-  }, [movieId]);
+  }, []);
 
   return (
     <ReviewList>

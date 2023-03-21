@@ -24,7 +24,7 @@ const MovieDetails = () => {
         setMovie(resp);
       })
       .catch(error => console.log(error));
-  }, [movieId]);
+  }, []);
 
   return (
     <Container>

@@ -20,7 +20,7 @@ const Cast = () => {
         setCast(resp);
       })
       .catch(error => console.log(error));
-  }, [movieId]);
+  }, []);
 
   return (
     <div>
