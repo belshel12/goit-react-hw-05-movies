@@ -3,19 +3,19 @@ import styled from 'styled-components';
 export const Form = styled.form`
   display: flex;
   align-items: center;
-  max-width: 500px;
-  margin-bottom: 24px;
+  max-width: 460px;
+  margin-bottom: 20px;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.2),
+    0px 2px 3px 0px rgba(0, 0, 0, 0.14), 0px 1px 6px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
 `;
 
 export const SearchButton = styled.button`
   display: inline-block;
   width: 48px;
-  height: 48px;
+  height: 32px;
   border: 0;
   background-size: 40%;
   background-repeat: no-repeat;
@@ -45,11 +45,10 @@ export const FormInput = styled.input`
   display: inline-block;
   width: 100%;
   font: inherit;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   outline: none;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 1px 8px;
   &::placeholder {
     font: inherit;
     font-size: 16px;

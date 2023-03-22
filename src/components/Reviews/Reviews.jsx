@@ -6,14 +6,8 @@ import { ReviewList, ReviewItem, Plug } from './Reviews.styled';
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   const { movieId } = useParams();
-  //   const isFirstRender = useRef(true);
 
   useEffect(() => {
-    //  if (isFirstRender.current) {
-    //    isFirstRender.current = false;
-    //    return;
-    //  }
-
     getReview(movieId)
       .then(resp => {
         setReviews(resp);

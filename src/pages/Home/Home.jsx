@@ -5,14 +5,9 @@ import { Item, List } from './Home.styled';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
-  //   const isFirstRender = useRef(true);
   const location = useLocation();
 
   useEffect(() => {
-    //  if (isFirstRender.current) {
-    //    isFirstRender.current = false;
-    //    return;
-    //  }
     getTrending()
       .then(result => {
         setMovies(result);

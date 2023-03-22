@@ -7,15 +7,9 @@ import SearchBar from 'components/SearchBar';
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
-  //   const isFirstRender = useRef(true);
   const query = searchParams.get('query') ?? '';
 
   useEffect(() => {
-    //  if (isFirstRender.current) {
-    //    isFirstRender.current = false;
-    //    return;
-    //  }
-
     getMovies(query)
       .then(resp => {
         setMovies(resp);

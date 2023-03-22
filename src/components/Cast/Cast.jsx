@@ -7,14 +7,8 @@ import placeholder from '../../pictures/placeholder.webp';
 const Cast = () => {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
-  //   const isFirstRender = useRef(true);
 
   useEffect(() => {
-    //  if (isFirstRender.current) {
-    //    isFirstRender.current = false;
-    //    return;
-    //  }
-
     getCast(movieId)
       .then(resp => {
         setCast(resp);

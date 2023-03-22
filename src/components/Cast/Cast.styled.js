@@ -18,6 +18,7 @@ export const CastItem = styled.li`
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  padding-bottom: 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 `;
 
@@ -28,7 +29,7 @@ export const Image = styled.img`
 
 export const ActorName = styled.h2`
   font-size: 18px;
-  margin: 0 0 8px 0;
+  margin: 0;
   text-align: center;
 `;
 
