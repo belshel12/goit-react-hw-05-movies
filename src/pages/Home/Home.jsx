@@ -1,18 +1,18 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { getTrending } from 'services/getApi';
 import { Item, List } from './Home.styled';
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
-  const isFirstRender = useRef(true);
+  //   const isFirstRender = useRef(true);
   const location = useLocation();
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    //  if (isFirstRender.current) {
+    //    isFirstRender.current = false;
+    //    return;
+    //  }
     getTrending()
       .then(result => {
         setMovies(result);

@@ -36,7 +36,7 @@ export async function getCast(id) {
 //REVIEWS
 export async function getReview(id) {
   const resp = await axios(
-    `${BASE_URL}/movie/${id}/reviews?api_key=${API_KEY}&language=en-US`
+    `${BASE_URL}/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`
   );
   return resp.data.results;
 }

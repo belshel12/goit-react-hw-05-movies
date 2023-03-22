@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCast } from 'services/getApi';
 import { CastList, CastItem, Image, ActorName, Character } from './Cast.styled';
@@ -7,13 +7,13 @@ import placeholder from '../../pictures/placeholder.webp';
 const Cast = () => {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
-  const isFirstRender = useRef(true);
+  //   const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    //  if (isFirstRender.current) {
+    //    isFirstRender.current = false;
+    //    return;
+    //  }
 
     getCast(movieId)
       .then(resp => {

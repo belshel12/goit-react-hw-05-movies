@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getReview } from 'services/getApi';
 import { ReviewList, ReviewItem, Plug } from './Reviews.styled';
@@ -6,13 +6,13 @@ import { ReviewList, ReviewItem, Plug } from './Reviews.styled';
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   const { movieId } = useParams();
-  const isFirstRender = useRef(true);
+  //   const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+    //  if (isFirstRender.current) {
+    //    isFirstRender.current = false;
+    //    return;
+    //  }
 
     getReview(movieId)
       .then(resp => {

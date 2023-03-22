@@ -10,14 +10,14 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState({});
   const { movieId } = useParams();
   const location = useLocation();
-  const isFirstRender = useRef(true);
+//   const isFirstRender = useRef(true);
   const backLinkLocation = useRef(location.state?.from ?? '/movies');
 
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
+   //  if (isFirstRender.current) {
+   //    isFirstRender.current = false;
+   //    return;
+   //  }
 
     getMovieById(movieId)
       .then(resp => {
